@@ -1,3 +1,5 @@
+import { AppWrapper } from "./styled";
+
 export const App = () => {
-    return ();
-}
+    return <AppWrapper>App</AppWrapper>;
+};
