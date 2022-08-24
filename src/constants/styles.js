@@ -12,4 +12,14 @@ export const FONT_COLOR = {
 
 export const COLOR = {
     default: "rgba(31, 31, 31, 1)",
+    header: "rgba(29, 29, 29, 1)",
+    border: "rgba(84, 84, 84, 1)",
+};
+
+export const RADIUS = {
+    border: "10px",
+};
+
+export const BORDER = {
+    default: "2px solid rgba(84, 84, 84, 1)",
 };

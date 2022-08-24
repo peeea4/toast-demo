@@ -1,20 +1,18 @@
-import { useDispatch, useSelector } from "react-redux";
+import { ToastProvider } from "@peeea4/toast-lib";
 
-import { getUserListAsync } from "@/actions/user";
-
-import { AppWrapper } from "./styled";
+import { AppWrapper } from "@/components/App/styled";
+import { Header } from "@/components/Header";
+import { Main } from "@/components/Main";
 
 export const App = () => {
-    const dispatch = useDispatch();
-    const state = useSelector((state) => state);
-    console.log(state);
-    const clickHandler = () => {
-        dispatch(getUserListAsync());
-    };
-    
+    const position = "top-right";
+    const animation = "flip";
+
     return (
         <AppWrapper>
-            <button onClick={clickHandler}>Click me</button>
+            <Header />
+            <Main />
+            <ToastProvider position={position} animation={animation} />
         </AppWrapper>
     );
 };

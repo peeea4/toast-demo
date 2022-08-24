@@ -6,7 +6,7 @@ export const setUserList = (userList) => ({
 });
 
 export const getUserListAsync = () => (dispatch) => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
+    fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) => response.json())
         .then((json) => dispatch(setUserList(json)));
 };
